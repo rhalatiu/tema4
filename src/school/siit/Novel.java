@@ -1,5 +1,10 @@
 package school.siit;
 
 public class Novel {
-    String typeOfNovel; //like mystery, sf, etc
+
+    private String typeOfNovel; //like mystery, sf, etc
+
+    public void setTypeOfNovel(String typeOfNovel) {
+        this.typeOfNovel = typeOfNovel;
+    }
 }

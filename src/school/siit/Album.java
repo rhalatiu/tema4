@@ -1,5 +1,9 @@
 package school.siit;
 
 public class Album {
-    String paperQuality;
+    private String paperQuality;
+
+    public void setPaperQuality(String paperQuality) {
+        this.paperQuality = paperQuality;
+    }
 }
