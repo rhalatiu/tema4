@@ -2,13 +2,14 @@ package school.siit;
 
 public class Book {
 
-    private String bookName, typeOfBook, paperQuality;
+    private String bookName;
     private Integer numberOfPages;
 
-    public Book(String bookName, Integer bookPages) {
+    public Book(){}
+
+    public Book(String bookName, Integer numberOfPages) {
         this.bookName = bookName;
         this.numberOfPages = numberOfPages;
-
     }
 
     protected Integer getNumberOfPages() {
