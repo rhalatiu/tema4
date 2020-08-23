@@ -4,24 +4,15 @@ public class ArtAlbum extends Book {
 
     private String paperQuality;
 
-    public ArtAlbum(String paperQuality){
+    public void ArtAlbum(String paperQuality) {
+        getBookName();
+        getNumberOfPages();
         this.paperQuality = paperQuality;
-    }
-
-    @Override
-    public String getBookName() {
-        return super.getBookName();
-    }
-
-    @Override
-    public Integer getNumberOfPages() {
-        return super.getNumberOfPages();
     }
 
     public String getPaperQuality() {
         return paperQuality;
     }
-
     /**
     private String paperQuality; //albums have paper quality
 

@@ -1,12 +1,12 @@
 package school.siit;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Library {
     public static void main(String[] args) {
-        ArrayList<String> books = new ArrayList<String>();
-        int i = 0;
+        ArrayList<Book> bk = new ArrayList<Book>();
         boolean isRunning  = true;
 
         while (isRunning) {
@@ -14,7 +14,7 @@ public class Library {
             System.out.println("Please enter the book name(quit to finish the program):");
             Scanner nameOfBook = new Scanner(System.in);
             String bookName = nameOfBook.nextLine();
-            if(bookName.equalsIgnoreCase("quit")){
+            if (bookName.equalsIgnoreCase("quit")) {
                 break;
             }
             System.out.println("Please enter the number of pages");
@@ -23,15 +23,14 @@ public class Library {
             System.out.println("Please enter the book type");
             Scanner typeOfBook = new Scanner(System.in);
             String bookType = typeOfBook.nextLine();
+            System.out.println("Please enter the paper quality");
+            Scanner qualityOfPaper = new Scanner(System.in);
+            String paperQuality = qualityOfPaper.nextLine();
             //System.out.println(bookName + " " + bookPages + " " + bookType);
-
-
-
-            books.add(bookName);
-            books.add(Integer.toString(bookPages));
-            books.add(bookType);
+            Book b = new Book(bookName, bookPages);
+            bk.add(b);
 
         }
-        System.out.println(books);
+            System.out.println(bk);
     }
 }

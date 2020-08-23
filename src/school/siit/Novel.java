@@ -4,16 +4,15 @@ public class Novel extends Book {
 
     private String typeOfBook; //like mystery, sf, etc
 
-    public void setTypeOfBook(String typeOfBook) {
+    public Novel(String typeOfBook) {
+        getBookName();
+        getNumberOfPages();
         this.typeOfBook = typeOfBook;
     }
 
     public String getTypeOfBook() {
         return typeOfBook;
     }
-
-
-
     /**
     public Novel(String typeOfBook){
         this.typeOfBook = typeOfBook;

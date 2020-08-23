@@ -1,24 +1,24 @@
 package school.siit;
 
-import java.util.Scanner;
-
 public class Book {
 
-    private String bookName;
+    private String bookName, typeOfBook, paperQuality;
     private Integer numberOfPages;
 
-    public Book(String bookName, Integer numberOfPages){
+    public Book(String bookName, Integer bookPages) {
         this.bookName = bookName;
         this.numberOfPages = numberOfPages;
+
     }
 
-    public String getBookName() {
+    protected Integer getNumberOfPages() {
+        return this.numberOfPages;
+    }
+
+    protected String getBookName() {
         return this.bookName;
     }
 
-    public Integer getNumberOfPages() {
-        return this.numberOfPages;
-    }
 
     /**
     //Constructor
