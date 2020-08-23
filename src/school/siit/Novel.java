@@ -1,10 +1,26 @@
 package school.siit;
 
-public class Novel {
+public class Novel extends Book {
 
-    private String typeOfNovel; //like mystery, sf, etc
+    private String typeOfBook; //like mystery, sf, etc
 
-    public void setTypeOfNovel(String typeOfNovel) {
-        this.typeOfNovel = typeOfNovel;
+    public void setTypeOfBook(String typeOfBook) {
+        this.typeOfBook = typeOfBook;
     }
+
+    public String getTypeOfBook() {
+        return typeOfBook;
+    }
+
+
+
+    /**
+    public Novel(String typeOfBook){
+        this.typeOfBook = typeOfBook;
+    }
+
+    public void setTypeOfBook(String typeOfNovel) {
+        this.typeOfBook = typeOfNovel;
+    }
+     */
 }
