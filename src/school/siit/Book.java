@@ -7,6 +7,20 @@ public class Book {
     private String bookName;
     private Integer numberOfPages;
 
+    public Book(String bookName, Integer numberOfPages){
+        this.bookName = bookName;
+        this.numberOfPages = numberOfPages;
+    }
+
+    public String getBookName() {
+        return this.bookName;
+    }
+
+    public Integer getNumberOfPages() {
+        return this.numberOfPages;
+    }
+
+    /**
     //Constructor
     public void setBookName(String bookName) {
         this.bookName = bookName;
@@ -16,7 +30,7 @@ public class Book {
         this.numberOfPages = numberOfPages;
     }
 
-    //Accesosor
+    //Accessor
     public String getBookName() {
         return bookName;
     }
