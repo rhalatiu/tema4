@@ -5,14 +5,14 @@ import java.util.Scanner;
 
 public class Library {
     public static void main(String[] args) {
-        ArrayList<Book> books = new ArrayList<Book>();
-        boolean isRunning  = true;
+        ArrayList<Book> books = new ArrayList<>();
 
-        while (isRunning) {
+        while (true) {
 
             System.out.println("Please enter the book name(quit to finish the program):");
             Scanner nameOfBook = new Scanner(System.in);
             String bookName = nameOfBook.nextLine();
+
             if (bookName.equalsIgnoreCase("quit")) {
                 break;
             }
@@ -31,12 +31,11 @@ public class Library {
 
             Book newBook = new Book(bookName, bookPages);
             books.add(newBook);
-            System.out.println(books.toString());
+            System.out.println(books);
         }
-            //System.out.println(books);
-        //for(Book t: books){
+            //for(Book t: books){
             //System.out.println("Name: " + t.getBookName() + "\nPages: " + t.getNumberOfPages());
             //System.out.println();
-        //}
+            //}
     }
 }
