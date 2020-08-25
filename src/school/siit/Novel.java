@@ -28,14 +28,4 @@ public class Novel extends Book {
     }
 
     Novel novel = new Novel(bookName, numberOfPages, typeOfBook);
-
-    /**
-    public Novel(String typeOfBook){
-        this.typeOfBook = typeOfBook;
-    }
-
-    public void setTypeOfBook(String typeOfNovel) {
-        this.typeOfBook = typeOfNovel;
-    }
-     */
 }

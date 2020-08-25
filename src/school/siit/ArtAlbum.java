@@ -28,16 +28,4 @@ public class ArtAlbum extends Book {
     }
 
     ArtAlbum album = new ArtAlbum(bookName, numberOfPages, paperQuality);
-
-    /**
-    private String paperQuality; //albums have paper quality
-
-    public void setPaperQuality(String paperQuality) {
-        this.paperQuality = paperQuality;
-    }
-
-    public String getPaperQuality() {
-        return paperQuality;
-    }
-     */
 }
